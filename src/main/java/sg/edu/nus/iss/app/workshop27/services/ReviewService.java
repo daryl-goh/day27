@@ -29,8 +29,10 @@ public class ReviewService {
             List<EditedComment> ll = (List<EditedComment>) r.getEdited();
             System.out.println(ll.size());
             if (ll.size() > 0)
+                // determine whether it is a boolean
                 r.setIsEdited(Boolean.valueOf(true));
             else
+                // determine whether it is a list
                 r.setIsEdited(Boolean.valueOf(false));
         }
 
